@@ -1,0 +1,13 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@vs
+      
+      - name: Say Hello
+        run: echo "Hello from Primo Git hub actions."
